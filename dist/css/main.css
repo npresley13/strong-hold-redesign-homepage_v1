@@ -72,5 +72,12 @@ select {
     scroll-behavior: auto !important;
   }
 }
+:root {
+  --clr-primary-brand-gray: #282424;
+  --clr-primary-brand-red: #ee3030;
+  --clr-18ga-teal: #089c9c;
+  --clr-14ga-blue: #084ca4;
+  --clr-12ga-blue: #0b1f51;
+}
 
 /*# sourceMappingURL=main.css.map */
