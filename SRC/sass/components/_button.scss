@@ -1,0 +1,12 @@
+.main-button {
+    background-color: var(--clr-primary-red);
+    color: var(--clr-primary-white);
+    border: none;
+    transition: .3s;
+}
+
+.main-button:hover {
+    background-color: var(--clr-primary-light-gray);
+    color: var(--clr-primary-gray);
+    cursor: pointer;
+}
