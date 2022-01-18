@@ -103,7 +103,7 @@ select {
     --fs-900: 4rem;
   }
 }
-@media only screen and (min-width: 74em) {
+@media only screen and (min-width: 80em) {
   :root {
     --fs-100: 0.725rem;
     --fs-200: 0.875rem;
@@ -122,6 +122,9 @@ select {
   color: var(--clr-primary-white);
   border: none;
   transition: 0.3s;
+  font-size: var(--fs-500);
+  width: 10em;
+  padding: 0.25em 0;
 }
 
 .main-button:hover {

@@ -3,6 +3,9 @@
     color: var(--clr-primary-white);
     border: none;
     transition: .3s;
+    font-size: var(--fs-500);
+    width: 10em;
+    padding: .25em 0;
 }
 
 .main-button:hover {
