@@ -89,7 +89,7 @@ select {
   --fs-700: 2.25rem;
   --fs-800: 2.75rem;
   --fs-900: 3.25rem;
-  --ff-roboto: Roboto, sans-serif;
+  --ff-primary: Roboto, sans-serif;
 }
 @media only screen and (min-width: 65em) {
   :root {
@@ -120,36 +120,56 @@ select {
 
 h1 {
   font-size: var(--fs-800);
-  font-family: var(--ff-roboto);
+  font-family: var(--ff-primary);
 }
 
 h2 {
   font-size: var(--fs-700);
-  font-family: var(--ff-roboto);
+  font-family: var(--ff-primary);
 }
 
 p {
   font-size: var(--fs-400);
-  font-family: var(--ff-roboto);
+  font-family: var(--ff-primary);
 }
 
 nav {
   background-color: var(--clr-primary-gray);
   display: flex;
   justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  max-height: 4em;
 }
 
 nav > ul {
   display: flex;
   list-style: none;
   padding: 0;
+  width: 40%;
+}
+
+nav > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav > ul > li > a {
   margin: 0 1em;
   font-size: var(--fs-300);
-  font-family: var(--ff-roboto);
+  font-family: var(--ff-primary);
   color: var(--clr-primary-white);
+}
+
+#nav-logo {
+  width: 7em;
+  align-self: center;
+  justify-self: center;
+}
+
+.nav-right {
+  justify-content: end;
 }
 
 .main-button {
@@ -161,7 +181,7 @@ nav > ul > li > a {
   padding: 0.25em 0;
   text-transform: uppercase;
   font-size: var(--fs-400);
-  font-family: var(--ff-roboto);
+  font-family: var(--ff-primary);
   font-weight: bold;
 }
 
@@ -173,7 +193,7 @@ nav > ul > li > a {
 
 footer > ul > li > a {
   font-size: var(--fs-300);
-  font-family: var(--ff-roboto);
+  font-family: var(--ff-primary);
 }
 
 .visuallyhidden {
