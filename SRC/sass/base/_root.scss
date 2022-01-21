@@ -2,6 +2,7 @@
 @use "../abstracts/font-sizes" as *;
 @use "../abstracts/breakpoints" as *;
 @use "../abstracts/mixins" as *;
+@use "fonts" as *;
 
 :root {
     // Custom Properties -- Colors
@@ -29,4 +30,7 @@
             } 
         }
     }
+
+    // Font Family
+    --ff-roboto: #{$roboto-font-family};
 }

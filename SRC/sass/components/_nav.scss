@@ -1,0 +1,18 @@
+nav {
+    background-color: var(--clr-primary-gray);
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav>ul>li>a {
+    margin: 0 1em;
+    font-size: var(--fs-300);
+    font-family: var(--ff-roboto);
+    color: var(--clr-primary-white);
+}
