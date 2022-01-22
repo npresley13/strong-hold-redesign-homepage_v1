@@ -1,0 +1,8 @@
+.two-column-grid {
+   display: grid;
+   gap: 1.5rem;
+   grid-template-columns: repeat(2, 1fr);
+   width: min(100%, 2800px);
+   height: 580px;
+   padding: 1.5rem;
+}
