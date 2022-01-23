@@ -1,8 +1,15 @@
 .two-column-grid {
    display: grid;
-   gap: 1.5rem;
+   gap: 0;
    grid-template-columns: repeat(2, 1fr);
    width: min(100%, 2800px);
-   height: 580px;
-   padding: 1.5rem;
+   padding: 0;
+}
+
+.three-column-grid {
+   display: grid;
+   gap: 0;
+   grid-template-columns: repeat(3, 1fr);
+   width: min(100%, 2800px);
+   padding: 0;
 }
