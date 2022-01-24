@@ -275,4 +275,11 @@ footer > ul > li > a {
   display: none;
 }
 
+.center-internal-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*# sourceMappingURL=main.css.map */
