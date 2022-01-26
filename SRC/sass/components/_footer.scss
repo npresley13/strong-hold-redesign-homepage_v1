@@ -1,3 +1,5 @@
+@use "../abstracts/mixins" as *;
+
 footer {
     background-color: var(--clr-primary-gray);
 }
@@ -6,4 +8,11 @@ footer>ul>li>a {
     font-size: var(--fs-300);
     font-family: var(--ff-primary);
     color: var(--clr-primary-white);
+}
+
+@include mq(small) {
+    footer>ul {
+        align-content: center;
+        justify-content: center;
+    }
 }
