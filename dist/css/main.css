@@ -160,20 +160,17 @@ nav {
 nav > ul {
   display: flex;
   padding: 0;
-  width: 40%;
 }
 
 nav > ul > li {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 nav > ul > li > a {
-  margin: 0 1em;
   font-size: var(--fs-300);
   font-family: var(--ff-primary);
   color: var(--clr-primary-white);
+  margin: 0 1em;
 }
 
 #nav-logo {
@@ -182,10 +179,39 @@ nav > ul > li > a {
   justify-self: center;
 }
 
+.nav-left {
+  display: none;
+}
+
 .nav-right {
   justify-content: end;
 }
 
+@media only screen and (min-width: 65em) {
+  .burger-container {
+    display: none;
+  }
+
+  nav > ul {
+    display: flex;
+    padding: 0;
+    width: 40%;
+  }
+
+  nav > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav > ul > li > a {
+    margin: 0 1em;
+  }
+
+  .nav-left {
+    display: flex;
+  }
+}
 .main-button {
   background-color: var(--clr-primary-red);
   color: var(--clr-primary-white);
@@ -223,10 +249,11 @@ footer > ul > li > a {
 }
 .two-column-grid {
   display: grid;
-  gap: 0;
+  gap: 1em;
   grid-template-columns: 1fr;
   width: min(100%, 2800px);
   padding: 0;
+  margin: 1em 0;
 }
 
 @media only screen and (min-width: 65em) {
@@ -236,10 +263,11 @@ footer > ul > li > a {
 }
 .three-column-grid {
   display: grid;
-  gap: 0;
+  gap: 1em;
   grid-template-columns: 1fr;
   width: min(100%, 2800px);
   padding: 0;
+  margin: 1em 0;
 }
 
 @media only screen and (min-width: 65em) {

@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 nav {
     background-color: var(--clr-primary-gray);
     display: flex;
@@ -10,20 +12,17 @@ nav {
 nav>ul {
     display: flex;
     padding: 0;
-    width: 40%;
 }
 
 nav>ul>li {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 nav>ul>li>a {
-    margin: 0 1em;
     font-size: var(--fs-300);
     font-family: var(--ff-primary);
     color: var(--clr-primary-white);
+    margin: 0 1em;
 }
 
 #nav-logo {
@@ -32,6 +31,36 @@ nav>ul>li>a {
     justify-self: center;
 }
 
+.nav-left {
+    display: none;
+}
+
 .nav-right {
     justify-content: end;
+}
+
+@include mq(medium) {
+    .burger-container {
+        display: none;
+    }
+
+    nav>ul {
+        display: flex;
+        padding: 0;
+        width: 40%;
+    }
+
+    nav>ul>li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav>ul>li>a {
+        margin: 0 1em;
+    }
+
+    .nav-left {
+        display: flex;
+    }
 }
