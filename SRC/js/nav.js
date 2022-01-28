@@ -20,16 +20,16 @@ const navs = [
 // Loops through array and builds the nav's list items
 
 const createNav = navs.map(nav => `<li class="${nav.class}">
-<a href="${nav.url}">${nav.text}</a></li>`);
+<a href="${nav.url}">${nav.text}</a></li>`).join(' ');
 
 
 // Writes the list items in the navigation
 
-document.getElementById('nav-left').innerHTML = createNav;
+document.getElementById('primary-navigation').innerHTML = createNav;
 
 // Variables
 
-const navLeft = document.getElementById('nav-left');
+const navLeft = document.getElementById('primary-navigation');
 
 
 

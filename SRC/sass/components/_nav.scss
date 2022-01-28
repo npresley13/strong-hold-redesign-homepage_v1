@@ -1,66 +1,73 @@
-@use '../abstracts/mixins' as *;
 
-nav {
-    background-color: var(--clr-primary-gray);
+// Header
+
+#primary-header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-content: center;
-    width: 100%;
-    max-height: 4em;
-}
-
-nav>ul {
-    display: flex;
-    padding: 0;
-}
-
-nav>ul>li {
-    display: flex;
-}
-
-nav>ul>li>a {
-    font-size: var(--fs-300);
-    font-family: var(--ff-primary);
-    color: var(--clr-primary-white);
-    margin: 0 1em;
+    flex-direction: row;
+    position: relative;
 }
 
 #nav-logo {
     width: 7em;
-    align-self: center;
-    justify-self: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
 }
 
-.nav-left {
+// Navigation
+
+#primary-navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.right-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.mobile-nav-toggle {
     display: none;
 }
 
-.nav-right {
-    justify-content: end;
-}
+// Mobile Navigation
 
-@include mq(medium) {
-    .burger-container {
-        display: none;
+@media (max-width: 50em) {
+    #primary-header {
+        position: fixed;
+        inset: 0 0 0 0;
+        background-color: steelblue;
+        flex-direction: column-reverse;
+        justify-content: start;
     }
 
-    nav>ul {
-        display: flex;
-        padding: 0;
-        width: 40%;
+    #primary-navigation {
+        flex-direction: column;
     }
 
-    nav>ul>li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        aspect-ratio: 1;
+        top: 1rem;
+        right: 1rem;
+        z-index: 9999;
     }
 
-    nav>ul>li>a {
-        margin: 0 1em;
+    #nav-logo {
+        top: 2rem;
+        left: -3rem;
     }
 
-    .nav-left {
-        display: flex;
+    .right-nav {
+        background-color: var(--clr-primary-gray);
+        width: 100%;
+        height: 4em;
+        justify-content: flex-end;
     }
 }
