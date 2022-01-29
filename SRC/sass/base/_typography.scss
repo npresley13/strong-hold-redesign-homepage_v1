@@ -29,3 +29,15 @@ a:hover {
     cursor: pointer;
     color: var(--clr-primary-light-gray);
 }
+
+#primary-navigation * {
+    color: var(--clr-primary-white);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-300);
+}
+
+.right-nav > div > div {
+    color: var(--clr-primary-white);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-300);
+}
