@@ -46,19 +46,21 @@
 
 @media (max-width: 50em) {
     #primary-header {
-        position: fixed;
-        inset: 0 0 0 0;
-        background-color: steelblue;
+        
         flex-direction: column-reverse;
         justify-content: start;
     }
 
     #primary-navigation {
         flex-direction: column;
+        
     }
 
     nav {
         width: 100%;
+        position: fixed;
+        inset: 4.7rem 0 0 0;
+        background-color: steelblue;
     }
 
     .mobile-nav-toggle {
