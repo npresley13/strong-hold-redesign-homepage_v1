@@ -56,11 +56,18 @@
         
     }
 
-    nav {
+    .nav-bar {
         width: 100%;
         position: fixed;
         inset: 4.7rem 0 0 0;
         background-color: steelblue;
+        transform: translatex(100%);
+        overflow: hidden;
+        transition: transform 350ms ease-out;
+    }
+
+    .nav-bar[data-visible="true"] {
+        transform: translatex(0%);
     }
 
     .mobile-nav-toggle {

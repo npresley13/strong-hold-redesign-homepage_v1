@@ -29,7 +29,24 @@ document.getElementById('primary-navigation').innerHTML = createNav;
 
 // Variables
 
-const navLeft = document.getElementById('primary-navigation');
+const primaryNav = document.querySelector(".nav-bar");
+const navToggle = document.querySelector(".mobile-nav-toggle");
+const hamburger = document.getElementById('hamburger');
+
+// Open & Close Mobile Menu
+
+navToggle.addEventListener('click', () => {
+    const visibility = primaryNav.getAttribute('data-visible');
+    if(visibility === 'false') {
+        primaryNav.setAttribute('data-visible', true);
+        navToggle.setAttribute('aria-expanded', true);
+        hamburger.setAttribute('class', "fas fa-times");
+    } else {
+        primaryNav.setAttribute('data-visible', false);
+        navToggle.setAttribute('aria-expanded', false);
+        hamburger.setAttribute('class', "fas fa-bars");
+    }
+});
 
 
 
