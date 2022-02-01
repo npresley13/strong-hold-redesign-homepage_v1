@@ -8,3 +8,12 @@
     flex-direction: column;
     align-items: center;
 }
+
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+}
+
+.stop-scrolling {
+    position: fixed;
+}

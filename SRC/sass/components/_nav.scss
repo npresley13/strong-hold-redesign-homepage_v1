@@ -44,7 +44,7 @@
 
 // Navigation - Mobile
 
-@media (max-width: 50em) {
+@media (max-width: 52em) {
     #primary-header {
         
         flex-direction: column-reverse;
@@ -88,7 +88,7 @@
 
     .right-nav {
         background-color: var(--clr-primary-gray);
-        width: 100%;
+        width: 100vw;
         height: fit-content;
         justify-content: space-between;
         padding: 1em 3em 1em 1em;
