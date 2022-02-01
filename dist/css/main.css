@@ -72,6 +72,10 @@ select {
     scroll-behavior: auto !important;
   }
 }
+ul {
+  padding-inline-start: 0;
+}
+
 :root {
   --clr-primary-gray: #282424;
   --clr-primary-red: #ee3030;
@@ -245,6 +249,10 @@ a:hover {
     height: fit-content;
     justify-content: space-between;
     padding: 1em 3em 1em 1em;
+  }
+
+  .mobile-nav-toggle > i {
+    color: white;
   }
 }
 .main-button {
