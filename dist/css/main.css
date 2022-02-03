@@ -171,6 +171,7 @@ a:hover {
   flex-direction: row;
   position: relative;
   background-color: var(--clr-primary-gray);
+  padding: 0 2em;
 }
 
 #nav-logo {
@@ -193,7 +194,7 @@ a:hover {
   gap: 1em;
 }
 
-#right-nav-cta {
+.right-nav-cta {
   display: flex;
   flex-direction: row;
   gap: 1em;
@@ -234,6 +235,8 @@ a:hover {
     top: 1rem;
     right: 1rem;
     z-index: 9999;
+    background-color: transparent;
+    border: none;
   }
 
   #nav-logo {
@@ -248,7 +251,7 @@ a:hover {
     width: 100vw;
     height: fit-content;
     justify-content: space-between;
-    padding: 1em 3em 1em 1em;
+    padding: 1em 4.25em 1em 1em;
   }
 
   .mobile-nav-toggle > i {
@@ -261,7 +264,7 @@ a:hover {
   border: none;
   transition: 0.3s;
   width: 10em;
-  padding: 0.25em 0;
+  padding: 0.25rem 0;
   text-transform: uppercase;
   font-size: var(--fs-400);
   font-family: var(--ff-primary);
@@ -269,6 +272,31 @@ a:hover {
 }
 
 .main-button:hover {
+  background-color: var(--clr-primary-light-gray);
+  color: var(--clr-primary-gray);
+  cursor: pointer;
+}
+
+.nav-cta-button {
+  background-color: var(--clr-primary-red);
+  color: var(--clr-primary-white);
+  border: none;
+  transition: 0.3s;
+  width: 8em;
+  padding: 0.25rem 0;
+  text-transform: uppercase;
+  font-size: var(--fs-300);
+  font-family: var(--ff-primary);
+  font-weight: bold;
+}
+
+@media (max-width: 52em) {
+  .nav-cta-button {
+    padding: 0.25rem;
+    height: fit-content;
+  }
+}
+.nav-cta-button:hover {
   background-color: var(--clr-primary-light-gray);
   color: var(--clr-primary-gray);
   cursor: pointer;

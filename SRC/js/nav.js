@@ -31,7 +31,7 @@ document.getElementById('primary-navigation').innerHTML = createNav;
 
 const primaryNav = document.querySelector(".nav-bar");
 const navToggle = document.querySelector(".mobile-nav-toggle");
-const hamburger = document.getElementById('hamburger');
+const hamburger = document.getElementById("hamburger");
 const body = document.body;
 
 // Open & Close Mobile Menu
@@ -41,12 +41,12 @@ navToggle.addEventListener('click', () => {
     if(visibility === 'false') {
         primaryNav.setAttribute('data-visible', true);
         navToggle.setAttribute('aria-expanded', true);
-        hamburger.setAttribute('class', "fas fa-times");
+        hamburger.setAttribute('class', 'fas fa-times');
         body.classList.add('stop-scrolling');
     } else {
         primaryNav.setAttribute('data-visible', false);
         navToggle.setAttribute('aria-expanded', false);
-        hamburger.setAttribute('class', "fas fa-bars");
+        hamburger.setAttribute('class', 'fas fa-bars');
         body.classList.remove('stop-scrolling');
     }
 });

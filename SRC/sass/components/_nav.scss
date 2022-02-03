@@ -8,6 +8,7 @@
     flex-direction: row;
     position: relative;
     background-color: var(--clr-primary-gray);
+    padding: 0 2em;
 }
 
 #nav-logo {
@@ -32,7 +33,7 @@
     gap: 1em;
 }
 
-#right-nav-cta {
+.right-nav-cta {
     display: flex;
     flex-direction: row;
     gap: 1em;
@@ -46,7 +47,6 @@
 
 @media (max-width: 52em) {
     #primary-header {
-        
         flex-direction: column-reverse;
         justify-content: start;
     }
@@ -77,6 +77,8 @@
         top: 1rem;
         right: 1rem;
         z-index: 9999;
+        background-color: transparent;
+        border: none;
     }
 
     #nav-logo {
@@ -91,7 +93,7 @@
         width: 100vw;
         height: fit-content;
         justify-content: space-between;
-        padding: 1em 3em 1em 1em;
+        padding: 1em 4.25em 1em 1em;
     }
 
     .mobile-nav-toggle > i {
