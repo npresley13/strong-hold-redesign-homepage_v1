@@ -198,6 +198,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   gap: 1em;
+  align-items: center;
 }
 
 .mobile-nav-toggle {
@@ -217,7 +218,7 @@ a:hover {
   .nav-bar {
     width: 100%;
     position: fixed;
-    inset: 4.7rem 0 0 0;
+    inset: 4rem 0 0 0;
     background-color: steelblue;
     transform: translatex(100%);
     overflow: hidden;
