@@ -252,6 +252,7 @@ a:hover {
     top: initial;
     right: initial;
     transform: none;
+    padding: 0.5em 0 0.5em 0.5em;
   }
 
   .right-nav {
@@ -259,7 +260,7 @@ a:hover {
     width: 100vw;
     height: fit-content;
     justify-content: space-between;
-    padding: 1em 4.25em 1em 1em;
+    padding: 0em 4.25em 0em 1em;
   }
 
   .mobile-nav-toggle > i {
