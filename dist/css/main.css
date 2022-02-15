@@ -367,6 +367,20 @@ footer > ul > li > a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  opacity: 0;
+}
+
 #new-product-section {
   width: 100%;
   height: 580px;

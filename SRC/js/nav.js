@@ -1,31 +1,31 @@
-const navs = [
-    {
-        text: "All Products",
-        url: "#",
-        class: "nav-link"
-    },
-    {
-        text: "Government",
-        url: "#",
-        class: "nav-link" 
-    },
-    {
-        text: "Custom Solutions",
-        url: "#",
-        class: "nav-link" 
-    }
-]
+// const navs = [
+//     {
+//         text: "All Products",
+//         url: "#",
+//         class: "nav-link"
+//     },
+//     {
+//         text: "Government",
+//         url: "#",
+//         class: "nav-link" 
+//     },
+//     {
+//         text: "Custom Solutions",
+//         url: "#",
+//         class: "nav-link" 
+//     }
+// ]
 
 
-// Loops through array and builds the nav's list items
+// // Loops through array and builds the nav's list items
 
-const createNav = navs.map(nav => `<li class="${nav.class}">
-<a href="${nav.url}">${nav.text}</a></li>`).join(' ');
+// const createNav = navs.map(nav => `<li class="${nav.class}">
+// <a href="${nav.url}">${nav.text}</a></li>`).join(' ');
 
 
-// Writes the list items in the navigation
+// // Writes the list items in the navigation
 
-document.getElementById('primary-navigation').innerHTML = createNav;
+// document.getElementById('primary-navigation').innerHTML = createNav;
 
 // Variables
 
@@ -51,5 +51,21 @@ navToggle.addEventListener('click', () => {
     }
 });
 
+// Megamenu
 
+document.addEventListener("click", e => {
+    const isDropdownButton = e.target.matches("[data-dropdown-button]")
+    if (!isDropdownButton && e.target.closest('[data-dropdown]') != null) return
+
+    let currentDropdown
+    if(isDropdownButton) {
+        currentDropdown = e.target.closest('[data-dropdown]')
+        currentDropdown.classList.toggle('active')
+    }
+
+    document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
+        if (dropdown === currentDropdown) return
+        dropdown.classList.remove('active')
+    })
+})
 
