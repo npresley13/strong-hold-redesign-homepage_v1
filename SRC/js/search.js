@@ -1,0 +1,1 @@
+const searchBox = document.querySelector('.nav-search');
