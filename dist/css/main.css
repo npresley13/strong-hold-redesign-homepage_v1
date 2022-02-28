@@ -397,7 +397,7 @@ footer > ul > li > a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.dropdown {
+#all-products {
   position: relative;
 }
 
