@@ -5,18 +5,20 @@
     flex-direction: column;
 }
 
-input.search {
+.suggestions-parent {
     position: relative;
+    width: 100%;
 }
 
 .suggestions {
     position: absolute;
-    top: 50px;
+    top: 0;
+    left: 0;
     margin: 0;
     padding: 0;
     overflow: hidden scroll;
     max-height: 300px;
-    border: 1px solid red;
+    //border: 1px solid black;
 }
 
 .suggestions li {

@@ -30,5 +30,11 @@ function displayMatches() {
     suggestions.innerHTML = html;
 }
 
+function clearSearchSuggestions() {
+    suggestions.innerHTML = "";
+    searchBox.value = "";
+}
+
 searchBox.addEventListener('change', displayMatches);
 searchBox.addEventListener('keyup', displayMatches);
+searchBox.addEventListener('focusout', clearSearchSuggestions);
