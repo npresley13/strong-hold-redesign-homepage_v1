@@ -1,6 +1,7 @@
 const products = [];
 const searchBox = document.querySelector('.search');
 const suggestions = document.querySelector('.suggestions');
+const searchForm = document.querySelector('.search-form');
 
 fetch('src/js/data.json')
     .then(response => response.json())
@@ -22,9 +23,9 @@ function displayMatches() {
         const regex = new RegExp(this.value, 'gi');
         const productName = product["Base SKU"].replace(regex, `<span class="h1">${this.value}</span>`);
         return `
-            <li>
+            <li><a href="https://strong-hold.com/shop/${product["Base SKU"]}">
                 <span class="name">${productName}</span>
-            </li>
+            </a></li>
         `
     }).join('');
     suggestions.innerHTML = html;
@@ -37,4 +38,4 @@ function clearSearchSuggestions() {
 
 searchBox.addEventListener('change', displayMatches);
 searchBox.addEventListener('keyup', displayMatches);
-searchBox.addEventListener('focusout', clearSearchSuggestions);
+searchForm.addEventListener('focusout', clearSearchSuggestions);
